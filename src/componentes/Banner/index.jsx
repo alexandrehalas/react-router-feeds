@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './Banner.module.css'
 import coloredCircle from './colored_circle.png'
 
