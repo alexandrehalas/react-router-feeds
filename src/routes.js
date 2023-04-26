@@ -1,3 +1,4 @@
+import Footer from "componentes/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Menu from "./componentes/Menu";
 import About from "./paginas/About";
@@ -12,6 +13,7 @@ export default function AppRoutes() {
         <Route path="/about" element={<About />} />
         <Route path="*" element={<h1>Página não encontrada</h1>} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
