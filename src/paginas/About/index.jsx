@@ -1,7 +1,11 @@
 import React from 'react'
+import Banner from '../../componentes/Banner'
 
 export default function About() {
     return (
-        <h1>About</h1>
+        <main>
+            <Banner />
+            <h1>About</h1>
+        </main>
     )
 }
