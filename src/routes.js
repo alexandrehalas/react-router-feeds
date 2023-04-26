@@ -3,7 +3,7 @@ import Menu from "./componentes/Menu";
 import About from "./paginas/About";
 import Home from "./paginas/Home";
 
-export default function App() {
+export default function AppRoutes() {
   return (
     <BrowserRouter>
       <Menu />
