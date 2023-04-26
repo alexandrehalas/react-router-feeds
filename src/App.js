@@ -1,10 +1,9 @@
-import About from "./paginas/About";
-import Home from "./paginas/Home";
-
-console.log(window.location)
-
-const pagina = window.location.pathname === '/' ? <Home /> : <About />
+import { BrowserRouter } from "react-router-dom";
 
 export default function App() {
-  return pagina;
+  return (
+    <BrowserRouter>
+
+    </BrowserRouter>
+  )
 }
