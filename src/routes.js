@@ -1,4 +1,5 @@
 import Footer from "componentes/Footer";
+import PageDefault from "componentes/PageDefault";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Menu from "./componentes/Menu";
 import About from "./paginas/About";
@@ -9,8 +10,10 @@ export default function AppRoutes() {
     <BrowserRouter>
       <Menu />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/" element={<PageDefault />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Route>
         <Route path="*" element={<h1>Página não encontrada</h1>} />
       </Routes>
       <Footer />
