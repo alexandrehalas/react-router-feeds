@@ -5,8 +5,14 @@ import { useParams } from "react-router-dom"
 import './Post.css'
 
 export default function Post() {
+
     const params = useParams()
     const post = posts.find((post) => { return post.id === Number(params.id) })
+
+    if (!post) {
+        return <h1>Post not found.</h1>
+    }
+
     return (
         <div>
             <PostTemplate
