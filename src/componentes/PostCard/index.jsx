@@ -1,6 +1,6 @@
-import styles from './Post.module.css'
+import styles from './PostCard.module.css'
 
-export default function Post({ post }) {
+export default function PostCard({ post }) {
     return (
         <div className={styles.post}>
             <img className={styles.cover} src={`/assets/posts/${post.id}/capa.png`} alt={`Capa do post ${post.title}`} />
