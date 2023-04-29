@@ -16,7 +16,7 @@ export default function AppRoutes() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
         </Route>
-        <Route path="posts/:id" element={<Post />} />
+        <Route path="posts/:id/*" element={<Post />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
