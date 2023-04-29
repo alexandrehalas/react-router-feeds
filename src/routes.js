@@ -1,5 +1,6 @@
 import Footer from "componentes/Footer";
 import PageDefault from "componentes/PageDefault";
+import ScrollToTop from "componentes/ScrollToTop";
 import NotFound from "paginas/NotFound";
 import Post from "paginas/Post";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -10,6 +11,7 @@ import Home from "./paginas/Home";
 export default function AppRoutes() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Menu />
       <Routes>
         <Route path="/" element={<PageDefault />}>
